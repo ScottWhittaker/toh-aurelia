@@ -1,0 +1,13 @@
+<template>
+  
+  <require from="dashboard/dashboard.css"></require>
+  
+  <h3>Top Heroes</h3>
+  <div class="grid grid-pad">
+    <div repeat.for="hero of heroes" click.trigger="gotoDetail(hero)" class="col-1-4">
+      <div class="module hero">
+        <h4>${hero.name}</h4>
+      </div>
+    </div>
+  </div>
+</template>

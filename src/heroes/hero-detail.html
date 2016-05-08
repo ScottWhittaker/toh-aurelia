@@ -1,0 +1,12 @@
+<template>
+  <require from="heroes/hero-detail.css"></require>
+  <div if.bind="hero">
+    <h2>${hero.name} details!</h2>
+    <div><label>id: </label>${hero.id}</div>
+    <div>
+      <label>name: </label>
+      <input value.bind="hero.name" placeholder="name">
+    </div>
+    <button click.trigger="goBack()">Back</button>
+  </div>
+</template>
